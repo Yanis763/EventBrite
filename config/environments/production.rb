@@ -51,7 +51,7 @@ Rails.application.configure do
 
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
-  config.action_mailer.default_url_options = { :host => 'YOURAPPNAME.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'eventbrite76.herokuapp.com' }
 
 
   # Use a different cache store in production.
