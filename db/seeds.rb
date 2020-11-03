@@ -8,13 +8,13 @@
 
 User.destroy_all
 Event.destroy_all
-Participation.destroy_all
+Attendance.destroy_all
 
 require 'faker'
 Faker::Config.locale = :fr
 
 #Create 10 Users 
 1.times do
-        User.create!(password: Faker::Internet.password, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name,  description: Faker::Lorem.sentence, email: Faker::Internet.email(domain: 'yopmail.com'))
+        User.create!(encrypted_password: Faker::Internet.password, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name,  description: Faker::Lorem.sentence, email: Faker::Internet.email(domain: 'yopmail.com'))
     end
 tp User.all
