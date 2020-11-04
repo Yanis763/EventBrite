@@ -1,0 +1,11 @@
+<h1>Event#index</h1>
+<p>Find me in app/views/event/index.html.erb</p>
+ <div class="container" style="padding-top: 5rem;">
+    <div class="card-group">
+      <div class="card">
+        <% @event.each do |p| %>
+        <p>Nom de l'évènement : <%= p.title %> / Organisateur : <%= p.user.first_name %> - <a href="/event/:id<%= p.id%>">Voir l'évènement</a></p>
+	    <% end %>
+      </div>
+    </div>
+  </div>
