@@ -5,12 +5,7 @@ class EventController < ApplicationController
 
   def show
 
-		@id = params[:id]
-		@event_title = @event.title
-		@event_price = @event.price
-		@event_location = @event.location
-		@event_description = @event.description
-		@event_duration= @event.duration 
+	
   end
 
   def index
@@ -38,14 +33,37 @@ class EventController < ApplicationController
   end
 
   def destroy
-        @event = Event.find(params[:id])
-        @event.destroy
-        redirect_to event_index_path
+        
   end
 
   def edit
   end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
